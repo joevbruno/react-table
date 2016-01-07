@@ -88,12 +88,14 @@ class BaselineContainer extends React.Component {
       <Card className="m-baseline__filter">
       <Text format="h4">Filter Example </Text>
         <Dropdown onChange={this.handleChange} name="filter_table" multi value={this.state.value} options={this.state.options} />
+        <Dropdown onChange={this.handleChange} name="filter_table" value={this.state.value} options={this.state.options} />
       </Card>
  <Card className="m-baseline__card">
         {this.props.items ? <Table
           
           title='Fake Data Table'
           dataSource={this.props.items}
+          fixedHeader
           columns={this.state.columns}
           handleReset={this.handleReset}
           hiddenColumns={Array.from(this.state.hiddenColumns)}
