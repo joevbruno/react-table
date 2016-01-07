@@ -1,0 +1,118 @@
+.m-baseline {
+  width: 100vw;
+  background: #f7f7f7;
+  display:flex;
+  @media (max-width: 1140px) { 
+    flex-wrap: wrap;
+  }
+}
+.m-baseline__card {
+  width: 70vw;
+  max-width: 1000px;
+  margin: 24px auto;
+  min-height: 600px;
+}
+.m-baseline__filter {
+  width: 27vw;
+  max-width: 1000px;
+  margin: 24px auto;
+  min-height: 600px;
+  padding: 24px;
+  .dropdown {
+    width: 400px;
+  }
+   @media (max-width: 1140px) { 
+    width: 95vw;
+    margin: 16px auto;
+  }
+}
+.column-id {
+  width: 50px;
+  min-width: 50px;
+  text-align: left;
+}
+.column-first-name {
+  width: 100px;
+  min-width: 100px;
+  text-align: left;
+}
+.column-last-name {
+  width: 100px;
+  min-width: 100px;
+  text-align: left;
+}
+.column-email {
+  width: 200px;
+  min-width: 200px;
+  text-align: left;
+}
+.column-country {
+  width: 100px;
+  min-width: 100px;
+  text-align: left;
+}
+.column-ip-address {
+  width: 125px;
+  min-width: 125px;
+  text-align: right;
+}
+.column-balance {
+  width: 125px;;
+  min-width: 125px;
+  text-align: right;
+}
+.column-available {
+  width: 125px;
+  min-width: 125px;
+  text-align: right;
+}
+@media (max-width: 1140px) {
+  .o-table-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px;
+  }
+  .o-table-header__columns {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .o-table-header__column {
+    width: 200px;
+    background: #0076FF;
+     @include shadow-2dp();
+     color: white;
+    margin: 4px;
+    height: 48px;
+    align-self: center;
+    text-align: center;
+    padding-top: 16px;
+    span {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .o-table-rows__row {
+      @include shadow-2dp();
+    padding: 16px;
+    position: relative;
+    min-width: 100px;
+    display: flex;
+    margin: 8px;
+    width: 225px;
+    min-height: 278px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
+    vertical-align: top;
+    background: $color-background;
+    height: auto;
+  }
+  .m-baseline__card {
+    box-shadow: none;
+    margin: 8px auto;
+    width: 95vw;
+  }
+}
